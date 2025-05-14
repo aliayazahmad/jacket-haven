@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Premium jackets curated for every season at Jacket Haven."/>
+  <title>Jacket Haven</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="main.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">Jacket Haven</div>
+    <nav class="desktop-nav">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+      <button class="wishlist-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+      <button class="cart-btn" aria-label="Cart" data-cart-count="0"><i class="fas fa-shopping-cart"></i></button>
+      <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-hidden="true">
+    <button class="mobile-menu-close" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" role="dialog" aria-hidden="true">
+    <button class="search-close" aria-label="Close Search"><i class="fas fa-times"></i></button>
+    <form class="search-form" role="search">
+      <input type="text" placeholder="Search jackets..." aria-label="Search jackets"/>
+    </form>
+  </div>
+
+  <!-- Cart Drawer -->
+  <aside class="cart-drawer" role="complementary" aria-label="Shopping Cart">
+    <button class="cart-close" aria-label="Close Cart"><i class="fas fa-times"></i></button>
+    <h3>Your Cart</h3>
+    <div class="cart-items" style="display: none;"></div>
+    <div class="cart-empty">Your cart is empty.</div>
+    <div class="cart-summary">
+      <span>Subtotal:</span>
+      <span class="subtotal-amount" aria-live="polite">$0.00</span>
+    </div>
+  </aside>
+
+  <!-- Product Section -->
+  <main>
+    <section class="product-listing">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/jacket1.jpg" alt="Black Winter Jacket"/>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title"><a href="#">Black Winter Jacket</a></h3>
+          <div class="product-price">
+            <span class="current-price">$129.99</span>
+          </div>
+          <button class="btn-add-to-cart">Add to Cart</button>
+          <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+        </div>
+      </div>
+      <!-- Add more product cards here -->
+    </section>
+  </main>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="testimonial active">
+      <p>"Best jacket store ever! High quality and fast delivery."</p>
+      <span>- Alex</span>
+    </div>
+    <div class="testimonial">
+      <p>"Loved the selection and easy checkout process."</p>
+      <span>- Maria</span>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h4>Stay Updated</h4>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+</body>
+</html>
